@@ -1,14 +1,13 @@
 \begin{table}
-\caption{Performance of Logistic Regression on Different Splits}
-\label{tab:lr-metrics}
-\begin{tabular}{lrrrr}
+\caption{Performance of LOGREG on different splits}
+\label{tab:logreg-metrics}
+\begin{tabular}{lrrrrrrr}
 \toprule
- & Accuracy & Precision & Recall & F1-Score \\
-Dataset &  &  &  &  \\
+ & Accuracy & Precision (weighted) & Recall (weighted) & F1 (weighted) & Precision (macro) & Recall (macro) & F1 (macro) \\
 \midrule
-Training & 0.599 & 0.704 & 0.599 & 0.628 \\
-Testing & 0.600 & 0.704 & 0.600 & 0.629 \\
-Overall & 0.599 & 0.704 & 0.599 & 0.628 \\
+Training & 0.599 & 0.704 & 0.599 & 0.628 & 0.471 & 0.708 & 0.505 \\
+Testing & 0.600 & 0.704 & 0.600 & 0.629 & 0.472 & 0.708 & 0.506 \\
+Overall & 0.599 & 0.704 & 0.599 & 0.628 & 0.471 & 0.708 & 0.505 \\
 \bottomrule
 \end{tabular}
 \end{table}

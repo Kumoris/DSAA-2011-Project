@@ -1,14 +1,13 @@
 \begin{table}
-\caption{Performance of Random Forest on Different Splits}
+\caption{Performance of RF on different splits}
 \label{tab:rf-metrics}
-\begin{tabular}{lrrrr}
+\begin{tabular}{lrrrrrrr}
 \toprule
- & Accuracy & Precision & Recall & F1-Score \\
-Dataset &  &  &  &  \\
+ & Accuracy & Precision (weighted) & Recall (weighted) & F1 (weighted) & Precision (macro) & Recall (macro) & F1 (macro) \\
 \midrule
-Training & 1.000 & 1.000 & 1.000 & 1.000 \\
-Testing & 0.952 & 0.952 & 0.952 & 0.952 \\
-Overall & 0.986 & 0.986 & 0.986 & 0.986 \\
+Training & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 \\
+Testing & 0.952 & 0.952 & 0.952 & 0.952 & 0.942 & 0.903 & 0.921 \\
+Overall & 0.986 & 0.986 & 0.986 & 0.986 & 0.983 & 0.971 & 0.977 \\
 \bottomrule
 \end{tabular}
 \end{table}
